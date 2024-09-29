@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-01022021-031368";"";
+"REFERENCE";"RS51_T";"";
+"TraceParts.PartTitle";"RS5 SERIES GEARED MOTOR";"";
+"TraceParts.InstanceId";"90-01022021-0313682N3XX9WWY2MK673V115V3T3RA";"";
+"DESIGN";"COMPACT TYPE RS51_T";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"SPG Co., Ltd";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"SPG_1925560986:90-01022021-031368";"";

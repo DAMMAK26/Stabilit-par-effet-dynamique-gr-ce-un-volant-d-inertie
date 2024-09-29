@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/23/23||18:52:56" using="Simscape Multibody Link Version 7.4" from="SolidWorks 24.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Pendule" uid="Pendule" version="109">
+<AssemblyFile name="Pendule.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="tige-1" uid="tige-1" entityUid="tige*:*Défaut">
+<Transform>
+<Rotation>-0.40668877309710738 -0.91356676922749847 0 0 0 0.99999999999999989 -0.91356676922749847 0.40668877309710738 0</Rotation>
+<Translation>0.18321399801693897 -0.017425602284045102 0.41982413544461405</Translation>
+</Transform>
+</Instance>
+<Instance name="bati-1" uid="bati-1" grounded="true" entityUid="bati*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.026817670998736148 -0.014277454135896955 0.04391602713824936</Translation>
+</Transform>
+</Instance>
+<Instance name="disque-1" uid="disque-1" entityUid="disque*:*Défaut">
+<Transform>
+<Rotation>0.99333890734234032 -0.11522940232390923 0 0 0 -0.99999999999999989 0.11522940232390923 0.99333890734234032 0</Rotation>
+<Translation>0.18321399801693897 0.012574397715954887 0.41982413544461405</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Coaxiale1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bati-1</Uid>
+</InstancePath>
+<Position>0.044916027138249361 -0.0031481481481481499 0.0049999999999999975</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>tige-1</Uid>
+</InstancePath>
+<Position>0.40600000000000003 0 0.029999999999999992</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bati-1</Uid>
+</InstancePath>
+<Position>0.044916027138249361 -0.0031481481481481499 0.0049999999999999975</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>tige-1</Uid>
+</InstancePath>
+<Position>0.40600000000000003 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>disque-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999992</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>tige-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999992</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>disque-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999992</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>tige-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="bati" uid="bati*:*Défaut" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="bati.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.040547996274884597</Mass>
+<CenterOfMass>0.025546357246540835 0.011851851851851851 0.0028745619799475145</CenterOfMass>
+<Inertia>1.7484591345624069e-06 8.4807381197140181e-06 9.986828247515591e-06 0 -2.9611196696073495e-07 0</Inertia>
+</MassProperties>
+<GeometryFile name="bati_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="disque" uid="disque*:*Défaut" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="disque.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.69580308250972089</Mass>
+<CenterOfMass>0 0 0.032333597464342306</CenterOfMass>
+<Inertia>0.00097312291160098425 0.00097312291160098468 0.0019383678964458742 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="disque_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="tige" uid="tige*:*Défaut" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="tige.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.22555898398129787</Mass>
+<CenterOfMass>0.2034459946486567 0.0014315416988649353 0.015052400015347597</CenterOfMass>
+<Inertia>1.0559260155854673e-05 0.0032895336530512002 0.0032794702029081916 -8.0893122384798411e-10 -2.5202129798104044e-10 -5.9926187371614814e-09</Inertia>
+</MassProperties>
+<GeometryFile name="tige_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
